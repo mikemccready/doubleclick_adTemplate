@@ -22,7 +22,12 @@ function adVisible() {
 // End Ad Init
 
 // Enabler Exits ////////////////////////////////////////////////////////////////////////
-Enabler.exit("Click on BG");
+document.getElementById('bg-exit').addEventListener('click', bgExitHandler, false);
+
+function bgExitHandler(e) {
+  Enabler.exit('Background Exit');
+}
+
 // Exits; overriding exit.
 // Enabler.exitOverride("Click on BG", "http://www.google.com");
 // Counters.
